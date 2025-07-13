@@ -1,0 +1,60 @@
+[project]
+name = "meshmapdb"
+version = "0.1.0"
+description = "Enhanced JSON DB with vertical & horizontal sharding, encryption, indexing, and more."
+readme = "README.md"
+license = "MIT"
+
+keywords = ["database", "nosql"]
+
+authors = [
+    { name = "Ankur Grover", email = "grover.ankur@gmail.com" }
+]
+requires-python = ">=3.9"
+dependencies = [
+    "blosc2>=2.5.1",
+    "cryptography>=45.0.5",
+    "filelock>=3.18.0",
+    "orjson>=3.10.18",
+    "pydantic>=2.11.7",
+    "structlog>=25.4.0",
+    "uuid-utils>=0.11.0",
+]
+
+
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Database",
+    "Topic :: Database :: Database Engines/Servers",
+    "Topic :: Utilities",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+    "Operating System :: OS Independent",
+    "Typing :: Typed",
+]
+
+[project.urls]
+DOCUMENTATION = "https://meshmapdb.github.io"
+Repository = "https://github.com/groverankur/meshmapdb.git"
+GitHub = "https://github.com/groverankur/meshmapdb"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "pre-commit>=4.2.0",
+    "pytest>=8.4.1",
+    "pytest-cov>=6.2.1",
+    "ruff>=0.12.3",
+]
